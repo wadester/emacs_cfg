@@ -4,9 +4,10 @@ Summary:
 ========
 
 This repository contains configuration files I have used since the 
-early 1990s for the Emacs editor.  It maps the PC function (F) keys 
-and adds features including language-specific highlighting.  The 
-mappings are loosely based on Brief editor (very old).
+early 1990s for both Emacs and XEmacs.  These lisp files map the PC 
+function (F) keys and add features including language-specific 
+highlighting.  Note that the mappings are loosely based on the 
+Brief editor (very old).
 
 
 Installation:
@@ -19,10 +20,11 @@ Installation:
 Notes:
 ======
 
-1)  This was created long-ago and was inspired on work I did circa 1992 
+1)  This was created many years ago, inspired by work I did circa 1991 
     to map the PC function keys on Win3.1 using Hummingbird Exceed to 
     support Brief Editor-like key maps (note at the time with Emacs 18 
-    I also had to hack the Emacs source to get it to work).  
+    I also had to hack the Emacs source to get it to work).  These were
+    also updated to support Sun workstation keyboards.
 
 2)  This version was started in 1993 and included syntax highlighting.
     Additional changes were made based on the Linux Journal article 
@@ -30,7 +32,7 @@ Notes:
 
 3)  This was created to support both Emacs and Xemacs.  For years I 
     used only Xemacs, but with current Fedora/CentOS/Ubuntu the newer 
-    Emacs is fantastic and that is all I use hence recent changes have
+    Emacs is fantastic and that is all I use, hence recent changes have
     not been tested with Xemacs.
 
 4)  The .emacs file is a stub directing to the .xemacs directory's
@@ -38,7 +40,7 @@ Notes:
 
     	    .emacs  --redirect-->  .xemacs/init.el
 
-5)  In 2014, I added the go-mode from: https://github.com/dominikh/go-mode.el
+5)  In 2015, I added the go-mode from: https://github.com/dominikh/go-mode.el
     This is included with some mods.  Note, you may want to get the
     latest version.
 
@@ -82,6 +84,7 @@ Key Mappings:
 * Sun Function Keys (beyond F12):  see init.el (very old, no longer tested)
 
 * PC Function Keys:
+
      F1	        1 window
      F2         split vertically
      F3         split horizontally
@@ -94,6 +97,7 @@ Key Mappings:
      F12        info
 
 * PC Keypad:
+
      KP /       delete line 
      KP *       undo
      KP +       copy region (copies to buffer)
