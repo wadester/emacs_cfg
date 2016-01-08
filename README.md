@@ -82,8 +82,12 @@ Key Mappings:
 =============
   
 * Sun Function Keys (beyond F12):  see init.el (very old, no longer tested)
+* PC Function (F1..F12) keys
+* PC Keypad:
+* Home, End, Page Up, Page Down
 
-* PC Function Keys:
+PC Function Keys and Keypad:
+============================
 
      F1	        1 window
      F2         split vertically
@@ -95,17 +99,14 @@ Key Mappings:
      F10        set mark
      F11        toggle between overwrite and insert
      F12        info
-
-* PC Keypad:
-
      KP /       delete line 
      KP *       undo
      KP +       copy region (copies to buffer)
      KP -       kill region (copies to buffer)
      KP enter   set mark
      KP ins     paste copied region (pastes buffer)
-
-*  Also mapped:
-
-   Home, End, Page UP, Page Down
+     Home	start of line
+     End	end of line
+     PgUp	one page up
+     PgDn	one page down
 
