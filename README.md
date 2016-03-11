@@ -1,56 +1,59 @@
-# emacs_cfg
+emacs_cfg - Emacs Configurations
+================================
+Wade Hampton <wadehamptoniv@gmail.com>
+x.y, 3/11/2016: Readme now AsciiDoc compliant
 
 Summary:
-========
+--------
 
-This repository contains configuration files I have used since the 
-early 1990s for both Emacs and XEmacs.  These lisp files map the PC 
-function (F) keys and add features including language-specific 
+This repository contains Emacs configuration files I have used since 
+the early 1990s for both Emacs and XEmacs.  These lisp files map the 
+PC function (F) keys and add features including language-specific 
 highlighting.  Note that the mappings are loosely based on the 
 Brief editor (very old).
 
 
 Installation:
-=============
+-------------
 
-1)  Copy dot_emacs to ~/.emacs
+1.  Copy dot_emacs to ~/.emacs
 
-2)  Make a .xemacs directory and copy all files under dot_xemacs to it
+2.  Make a .xemacs directory and copy all files under dot_xemacs to it
 
 Notes:
-======
+------
 
-1)  This was created many years ago, inspired by work I did circa 1991 
+1.  This was created many years ago, inspired by work I did circa 1991 
     to map the PC function keys on Win3.1 using Hummingbird Exceed to 
-    support Brief Editor-like key maps (note at the time with Emacs 18 
+    support Brief Editor-like key maps (note, at the time with Emacs 18 
     I also had to hack the Emacs source to get it to work).  These were
-    also updated to support Sun workstation keyboards.
+    also updated to support Sun workstation keyboards in the early 1990s.
 
-2)  This version was started in 1993 and included syntax highlighting.
+2.  This version was started in 1993 and included syntax highlighting.
     Additional changes were made based on the Linux Journal article 
     in Issue 5, Page 10.
 
-3)  This was created to support both Emacs and Xemacs.  For years I 
-    used only Xemacs, but with current Fedora/CentOS/Ubuntu the newer 
-    Emacs is fantastic and that is all I use, hence recent changes have
-    not been tested with Xemacs.
+3.  This was created to support both Emacs and Xemacs.  For years I 
+    used only Xemacs, but with current Fedora/CentOS/Ubuntu, the newer 
+    Emacs is fantastic and that is all I use.  As a result, all recent 
+    changes have not been tested with Xemacs.
 
-4)  The .emacs file is a stub directing to the .xemacs directory's
+4.  The .emacs file is a stub directing to the .xemacs directory's
     init.el file:
 
     	    .emacs  --redirect-->  .xemacs/init.el
 
-5)  In 2015, I added the go-mode from: https://github.com/dominikh/go-mode.el
+5.  In 2015, I added the go-mode from: https://github.com/dominikh/go-mode.el
     This is included with some mods.  Note, you may want to get the
     latest version.
 
-6)  Customize colors in init.el lines like:
+6.  Customize colors in init.el lines like:
 
       (set-face-foreground 'font-lock-comment-face "darkred")
 
 
 File Types Supported:
-=====================
+---------------------
 
      .c         c-mode
      .cc        c-mode
@@ -79,7 +82,7 @@ File Types Supported:
      .go        go-mode
 
 Key Mappings:
-=============
+-------------
   
 * Sun Function Keys (beyond F12):  see init.el (very old, no longer tested)
 * PC Function (F1..F12) keys
@@ -87,7 +90,7 @@ Key Mappings:
 * Home, End, Page Up, Page Down
 
 PC Function Keys and Keypad:
-============================
+----------------------------
 
      F1	        1 window
      F2         split vertically
